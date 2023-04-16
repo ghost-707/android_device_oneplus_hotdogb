@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := yaap_hotdogb
+PRODUCT_NAME := lineage_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -39,3 +39,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=OnePlus7T
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Maintainer Stuff
+ALPHA_BUILD_TYPE := Ghostly
+ALPHA_MAINTAINER := Ghost
+
+# Extra Stuff
+TARGET_SUPPORTS_QUICK_TAP := true  
+
+WITH_GAPPS := true
+TARGET_CORE_GAPPS := true
+TARGET_ENABLE_BLUR := true
