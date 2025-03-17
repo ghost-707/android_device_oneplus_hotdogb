@@ -31,3 +31,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus7T \
     SystemDevice=OnePlus7T \
     SystemName=OnePlus7T
+
+# To include Gapps 
+WITH_GMS := true
+
+# To Build Cinematic Wallpaper (Works with Pixel as well as Matrixx launcher)
+TARGET_SUPPORTS_WALLEFFECT := true
+
+#Some more GMS Flag
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
+
+# Device info
+MATRIXX_BATTERY := 3800mah
+MATRIXX_CHIPSET := SnapDragon855+
+MATRIXX_DISPLAY := 1920x2400, 90Hz
