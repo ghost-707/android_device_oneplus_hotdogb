@@ -31,3 +31,15 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus7T \
     SystemDevice=OnePlus7T \
     SystemName=OnePlus7T
+
+RISING_MAINTAINER := GHOST
+
+TARGET_ENABLE_BLUR := true 
+
+WITH_GMS := true
+
+TARGET_CORE_GMS := true
+
+TARGET_CORE_GMS_EXTRAS := true
+
+TARGET_INCLUDE_GOOGLE_DIALER := true
